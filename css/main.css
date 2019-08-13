@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+
+body{
+    margin:0; 
+    padding:0; 
+    font-family: 'Roboto Condensed', sans-serif;
+    background: #eee;
+    height: auto; 
+}
+
+/* utiilies */ 
+h1{
+    font-weight: 400; 
+    font-size: 2rem; 
+    margin: 0; 
+    text-transform: uppercase;
+}
+h2{
+    font-weight: 400; 
+    font-size: 1.2rem; 
+    text-transform: capitalize;
+    margin: 0; 
+}
+img{
+    display: block; 
+    width: 100%; 
+}
+
+.btn {
+    /* this class make the a as bottom */ 
+    padding: 0.5rem 2rem ; 
+    border: 1px #ccc solid; 
+    display: inline-block;
+    margin-top: 2rem; 
+    border-radius: 50px; 
+    text-decoration: none; 
+    color: #333; 
+    transition: background 500ms ease; 
+}
+.btn:hover{
+    background: #f4f4f4; 
+}
+.caption{
+    /* this class make h3 and p in the photo section */ 
+    padding: 0.8rem; 
+    text-align:center; 
+}
+
+/* start main */ 
+main{
+    max-width: 900px;
+    margin: auto; 
+    box-shadow: 30px 0px 40px rgba(0,0, 0, 0.2),
+     -30px 0px 40px rgba(0,0, 0, 0.2);
+}
+
+/* Start landing Area */
+#landing{
+    background: #fff;
+}
+#landing-text{
+    display: flex;  /*more clear than padding etc */ 
+    flex: 0 1 40vw; 
+    height: 50vh;
+    justify-content: center; 
+    align-items: center; 
+    text-align: center;
+    padding-right: 1rem; 
+    padding-left: 1rem; 
+}
+#landing-text h2{
+    color: #888; 
+}
+
+#landing-img{
+    height: 50vh;
+    flex: 0 1 60vw; 
+    background:url("https://images.pexels.com/photos/598917/pexels-photo-598917.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940") no-repeat center/cover; 
+}
+/* Start landing Area */
+
+/* start ourwork  section */
+#ourwork{
+    padding: 1.5rem;
+    text-align: center; 
+    background: #333 ; 
+    color: #fff; 
+}
+
+#ourwork h2 {
+    border-left: dotted 1px #fff; 
+    border-right: dotted 1px #fff;
+    display: inline-block; 
+    padding-right:1rem ; 
+    padding-left: 1rem;  
+}
+/* end ourwork  section */
+
+/* end main */ 
+
+/* start footer */ 
+footer{
+    text-align: center; 
+    padding: 2rem 1rem ; 
+    margin: auto; 
+    color: #333; 
+}
+footer h3{
+    font-size: 3rem; 
+    margin-bottom: 0; 
+}
+/* end footer */ 
+
+/* responsive page  screan size 500 and up */ 
+@media (min-width:500px){
+    #landing{
+        display: flex; 
+        height: 100%;
+    }
+    #landing-text {
+        height: 100vh; 
+    }
+    #landing-img {
+        height: 100vh; 
+    }
+}
+
+/* responsive button screan size 700 and up */ 
+@media (min-width:700px){
+    .btn{
+        padding: 1rem; 
+    }
+}
